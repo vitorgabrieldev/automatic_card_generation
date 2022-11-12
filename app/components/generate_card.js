@@ -81,6 +81,60 @@ function controls() {
     token_prices++;
 };
 
-function buy(item) {
-    console.log(item);
+function search() {
+    let search = document.querySelector('#search_name').value;
+    if(search) {
+        titles.forEach((element, index) => {
+            if(element.toLocaleLowerCase() === search.toLocaleLowerCase()) {
+                $(".container_card").remove("div");
+
+                let i = index;
+
+                var object = {
+                    token_title: i,
+                    token_description: i,
+                    token_prices: i,
+                    token_search: 1,
+                };
+
+               
+
+            };
+        });
+
+         search_print(object);
+    };
 };
+
+function search_print(object) {
+    if(object.token_search == 1) {
+        $(".container_card").append(`
+        <div class="card">
+            <div class="card-img"></div>
+            <div class="card-info">
+                <p class="text-title">${titles[object.token_title]}</p>
+                <p class="text-body">${description[object.token_description]}</p>
+            </div>
+            <div class="card-footer">
+                <span class="text-title">${prices[object.token_prices]}</span>
+                <div onclick="buy(${object.token_title})" class="card-button">
+                    <i class="svg_icon bi bi-cart-fill"></i>
+                </div>
+            </div>
+        </div>
+        `);
+    };
+};
+
+function buy(item) {
+    alert(`Sua compra do produto "${titles[item]}" está sendo processada!`)
+};
+
+document.querySelector('#btn_search').addEventListener('click', () => {
+    search();
+});
+window.addEventListener('keypress', (e) => {
+    if(e.key === 'Enter') {
+        search();
+    };
+});
