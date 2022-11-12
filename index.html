@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <title>Generate Cards</title>
+
+    <!-- --- * --- Require Metas Tags --- * --- -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --- * --- Import Bootstrap(package) --- * --- -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+        <!-- Javascript -->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- Icons BootStrap(CDN) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+
+    <!-- --- * --- Style Sheets --- * --- -->
+    <link rel="stylesheet" href="./app/app.css">
+    <link rel="stylesheet" href="./app/cards.css">
+
+    <!-- --- * --- Scripts Sheets --- * --- -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./app/components/controlls.js" defer></script>
+    <script src="./app/components/generate_card.js" defer></script>
+
+</head>
+<body>
+    <!-- --- * --- Components --- * --- -->
+    <header class="container_header">
+        <nav class="d-flex container_main navbar navbar-dark bg-dark">
+            <!-- Navbar content -->
+            <section class="container_logo">
+                <i class="bi bi-suit-diamond-fill"></i>
+                <h1 class="logo_content">WebCode</h1>
+            </section>
+            <section class="container_links">
+                <a href="https://www.github.com/vitorgabrieldev">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </section>
+            <section class="search_container">
+                <div class="input">
+                    <input type="text" placeholder="Search" name="search" class="input_search" id="search_name" spellcheck="false" title="Procure por seu anime favorito">
+                    <button style="all: unset;" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </section> 
+        </nav>
+    </header>
+    <main class="container_cards">
+        <div class="container_card"></div>
+    </main>
+</body>
+</html>

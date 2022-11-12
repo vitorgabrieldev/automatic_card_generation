@@ -1,0 +1,84 @@
+.container_header .navbar {
+    padding: .3rem 3.7rem .3rem 3.7rem;
+}
+.container_logo {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+.container_logo h1 {
+    cursor: pointer;
+    user-select: none;
+}
+.container_logo h1::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    margin-top: 2.6rem;
+    background: lightgreen;
+    box-shadow: 8px 8px 15px lightgreen;
+    animation: showHideen_bar infinite 10s ease-in-out;
+}
+@keyframes showHideen_bar {
+    50% {
+        background: lightblue;
+        box-shadow: 12px 12px 20px lightblue;
+        width: 11rem;
+    }
+    100% {
+        width: 0;
+    }
+}
+.container_logo i {
+    font-size: 2.6rem;
+    margin-bottom: 5px;
+    color: #fefefe;
+}
+.container_logo h1 {
+    color: #fefefe;
+}
+.container_links {
+    display: flex;
+    gap: 1.5rem;
+}
+.container_links a i  {
+    font-size: 2.5rem;
+    color: #fefefe;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+.input input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fefefe;
+    padding: 0 3.3rem .3rem 1.3rem;
+    font-size: 1.2rem;
+    color: #fefefe;
+}
+.input i {
+    margin-bottom: 1rem;
+    margin-left: -35px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    .container_links {
+        display: none;
+    }
+}
+@media screen and (max-width: 750px){
+    .logo_content {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .container_logo{
+        display: none;
+    }
+}

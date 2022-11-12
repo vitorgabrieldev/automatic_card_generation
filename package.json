@@ -1,0 +1,23 @@
+{
+  "name": "automatic_card_generation",
+  "version": "1.0.0",
+  "description": "Geração automatica de cards",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorgabrieldev/automatic_card_generation.git"
+  },
+  "author": "Vitor Gabriel De Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorgabrieldev/automatic_card_generation/issues"
+  },
+  "homepage": "https://github.com/vitorgabrieldev/automatic_card_generation#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "jquery": "^3.6.1"
+  }
+}
