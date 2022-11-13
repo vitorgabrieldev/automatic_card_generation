@@ -143,14 +143,15 @@ function search() {
             });
             token_remove_items = 0;
         } else {
-            $(".container_card").remove("div");
+            $(".container_cards").remove("div");
         };
     };
 };
 
 function print_renove(object) {
-    console.log(object);
-    $(".container_card").append(`
+    $(".container_card").remove("div");
+
+    $(".container_cards").append(`
         <div class="card">
             <div class="card-img"></div>
             <div class="card-info">

@@ -1,3 +1,7 @@
+body {
+    background: rgb(31, 29, 29);
+}
+
 .card {
     width: 190px;
     height: 254px;
@@ -70,8 +74,13 @@
 .container_cards {
     background: rgb(41, 39, 39);
     padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
 }
 .container_card {
+    position: absolute;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 2rem;
